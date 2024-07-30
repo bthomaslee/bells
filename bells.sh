@@ -4,7 +4,6 @@
 zmodload zsh/datetime
 spaces=$(echo -en " ")
 newlines=$(echo -en "\n\b")
-commas=$(echo -en ",")
 samples_path="/Users/$USER/Dropbox/Sounds/Samples"
 IFS="$newlines"; set -A start_tones $(find -f $samples_path | grep -P ".*-CLASSstart.*" | sort)
 IFS="$newlines"; set -A stop_tones $(find -f $samples_path | grep -P ".*-CLASSstop.*" | sort)
